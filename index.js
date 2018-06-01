@@ -13,7 +13,12 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
 
 function deleteFromObjectByKey(object, key) {
   var newRecipes = Object.assign({}, recipes);
-  newRecipes
+  newRecipes;
   delete newRecipes[key];
-  return newRecipes
+  return newRecipes;
+}
+
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist.Slowdive;
+  return playlist;
 }
