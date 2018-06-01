@@ -18,7 +18,7 @@ function deleteFromObjectByKey(object, key) {
   return newRecipes;
 }
 
-function removeFromPlaylist(playlist, artistName) {
-  delete playlist.Slowdive;
-  return playlist;
+function destructivelyDeleteFromObjectByKey(object, key) {
+  delete object[key];
+  return object;
 }
